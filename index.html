@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday FABEHA 🎉</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+#message {
+  font-size: 20px;
+  margin: 20px;
+  animation: fadeIn 4s;
+}
+
+.photos img {
+  width: 200px;
+  border-radius: 15px;
+  margin: 10px;
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cake {
+  font-size: 90px;
+  animation: pop 2s infinite;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.balloon {
+  position: absolute;
+  font-size: 40px;
+  animation: rise 8s linear infinite;
+}
+
+@keyframes rise {
+  from { bottom: -100px; }
+  to { bottom: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎉 Happy 19th Birthday 🎉</h1>
+
+<div class="cake">🎂</div>
+
+<div id="message">
+Wishing you a day full of smiles, laughter, and happiness 💖  
+May all your dreams come true 🌟 You'll always be the most closest one to me 🗿
+</div>
+
+<div class="photos">
+  <img src="pic1.jpg">
+  <img src="pic2.jpg">
+  <img src="pic3.jpg">
+  <img src="pic4.jpg">
+</div>
+
+<audio autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+for (let i = 0; i < 10; i++) {
+  let b = document.createElement("div");
+  b.className = "balloon";
+  b.innerHTML = "🎈";
+  b.style.left = Math.random() * 100 + "vw";
+  b.style.animationDelay = Math.random() * 5 + "s";
+  document.body.appendChild(b);
+}
+</script>
+
+</body>
+</html>
